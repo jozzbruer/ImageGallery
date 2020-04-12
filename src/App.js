@@ -26,7 +26,7 @@ function App() {
         !isLoading && images.length === 0 && 
         <h1 className="text-5xl text-center mx-auto mt-32">No Images Found</h1>
       }
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 sm:grid-cols-1 sm:ml-4 gap-4">
         {images.map(image => (
           <ImageCard key={image.id} image={image}  />
         ))}
